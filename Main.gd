@@ -5,27 +5,8 @@ var score = Score.new(Vector2(0,0))
 var practice_team1 = generate_random_team()
 var practice_team2 = generate_random_team()
 
-var OH1 = Player.new("OH1",0.90,0.70,0.90, .80)
-var OH2 = Player.new("OH2",0.90,0.70,0.90,.80)
-var MB1 = Player.new("MB1",0.90,0.70,0.90,.80)
-var S = Player.new("S",0.90,0.70,0.90,.80)
-var RS = Player.new("RS",0.90,0.70,0.90,.80)
-var Lib = Player.new("Lib", 0.90,0.70,0.90, .80)
 
-var team1 = {OH1: 4, OH2: 1, MB1: 3, S: 2, Lib: 6, RS: 5}
-
-
-var OH1_2 = Player.new("OH1",0.90,0.70,0.90, .80)
-var OH2_2 = Player.new("OH2",0.90,0.70,0.90,.80)
-var MB1_2 = Player.new("MB1",0.90,0.70,0.90,.80)
-var S_2 = Player.new("S",0.90,0.70,0.90,.80)
-var RS_2 = Player.new("RS",0.90,0.70,0.90,.80)
-var Lib_2 = Player.new("Lib", 0.90,0.70,0.90, .80)
-
-
-var team2 = {OH1: 1, OH2: 4, MB1: 3, S: 2, Lib: 6, RS: 5}
-
-var board = Board.new(team1, team2, score)
+var board = Board.new(practice_team1, practice_team2, score)
 var is_already_served = false
 #This function will simulate a single point of a set
 
